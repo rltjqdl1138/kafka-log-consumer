@@ -29,6 +29,8 @@ function handleLog(msg){
         hourList:[],
       };
     }
+    if(!data.userSeq) return;
+    
     if( !DAY_MAP[dayPivot].userList.includes(data.userSeq) )
       DAY_MAP[dayPivot].userList.push(data.userSeq);
 
