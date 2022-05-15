@@ -1,0 +1,22 @@
+{
+  "name": "kafka-log-consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rltjqdl1138/kafka-log-consumer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rltjqdl1138/kafka-log-consumer/issues"
+  },
+  "homepage": "https://github.com/rltjqdl1138/kafka-log-consumer#readme",
+  "dependencies": {
+    "kafka-node": "^5.0.0"
+  }
+}
