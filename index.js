@@ -49,11 +49,11 @@ function handleLog(msg){
 function printLog(timestamp, {userList, hourList}){
   const a = parseInt(timestamp, 10);
   const date = new Date(a*HOUR_MILL);
-  console.log(`  [${date.getFullYear()}.${date.getMonth()}.${date.getDate()}] DAU: ${userList.length}명`)
+  console.log(`  [${date.getFullYear()}.${date.getMonth()+1}.${date.getDate()}] DAU: ${userList.length}명`)
   console.log(userList)
   for(let i=0; i<24; i++){
-    if(!hourList[i]) 
-      console.log(`  * ${i}시:\t 0명`);
+    if(!hourList[i]);
+      //console.log(`  * ${i}시:\t 0명`);
     else
       console.log(`  * ${i}시:\t ${hourList[i].length}명`);
   }
